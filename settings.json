@@ -1,0 +1,164 @@
+{
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#CBA6F760",
+  "vim.highlightedyank.duration": 250,
+  "terminal.integrated.fontSize": 12,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnSave": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.scm.active"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "r", "f"],
+      "commands": ["fileutils.renameFile"]
+    },
+    {
+      "before": ["<leader>", "s", "a"],
+      "commands": [":wa"]
+    },
+    {
+      "before": ["<leader>", "s", "f"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "o", "o"],
+      "commands": ["workbench.action.showEditorsInActiveGroup"]
+    },
+    {
+      "before": ["<leader>", "o", "g"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    // Tabs
+
+    {
+      "before": ["<leader>", "q"], // Close current tab
+      "after": ["<C-w>", "q"]
+    },
+    // LSP Keybindings
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", ";"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>", "P"],
+      "commands": ["workbench.action.showCommands"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine", "extension.vim_escape"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-k>": false,
+    "<C-d>": false
+  },
+  "editor.lineNumbers": "relative",
+  "zenMode.hideLineNumbers": false,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 20,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "zenMode.showTabs": "none",
+  "zenMode.centerLayout": false,
+  "zenMode.hideStatusBar": false,
+  "editor.fontFamily": "'FiraCode Nerd Font Mono' ,  Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.cursorSurroundingLines": 15,
+  "workbench.iconTheme": "catppuccin-frappe",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "workbench.editor.showTabs": "single"
+}
