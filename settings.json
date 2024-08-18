@@ -1,4 +1,6 @@
 {
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.iconTheme": "catppuccin-frappe",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
@@ -6,12 +8,13 @@
   "vim.highlightedyank.duration": 250,
   "terminal.integrated.fontSize": 12,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+
   "editor.mouseWheelZoom": true,
   "editor.formatOnSave": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "after": ["<esc>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -21,11 +24,7 @@
     },
     {
       "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "g"],
-      "commands": ["workbench.scm.active"]
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       "before": ["<leader>", "f"],
@@ -45,11 +44,11 @@
     },
     {
       "before": ["J"],
-      "after": ["5", "j"]
+      "after": ["5", "g", "j"]
     },
     {
       "before": ["K"],
-      "after": ["5", "k"]
+      "after": ["5", "g", "k"]
     },
     {
       "before": ["<leader>", "c"],
@@ -67,12 +66,7 @@
       "before": ["<leader>", "o", "g"],
       "commands": ["workbench.action.showAllSymbols"]
     },
-    // Tabs
 
-    {
-      "before": ["<leader>", "q"], // Close current tab
-      "after": ["<C-w>", "q"]
-    },
     // LSP Keybindings
     {
       "before": ["g", "d"],
@@ -83,7 +77,7 @@
       "commands": ["editor.action.showDefinitionPreviewHover"]
     },
     {
-      "before": ["g", "i"],
+      "before": ["g", "t", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
     {
@@ -107,6 +101,38 @@
       "commands": ["editor.action.peekTypeDefinition"]
     },
     {
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["<leader>", "g", "e"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["vscode-harpoon.gotoEditor4"]
+    },
+    {
+      "before": ["<leader>", "5"],
+      "commands": ["vscode-harpoon.gotoEditor5"]
+    },
+    {
       "before": ["<leader>", ";"],
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
@@ -115,7 +141,6 @@
       "commands": ["workbench.action.showCommands"]
     }
   ],
-
   "vim.visualModeKeyBindings": [
     {
       "before": ["<leader>", "c"],
@@ -123,14 +148,17 @@
     }
   ],
   "vim.handleKeys": {
-    "<C-k>": false,
-    "<C-d>": false
+    "<C-w>": false,
+    "<C-k>": false
   },
   "editor.lineNumbers": "relative",
   "zenMode.hideLineNumbers": false,
   "dotnet.codeLens.enableReferencesCodeLens": false,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -145,9 +173,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Catppuccin Frappé",
   "editor.minimap.enabled": false,
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "zenMode.showTabs": "none",
@@ -156,9 +183,8 @@
   "editor.fontFamily": "'FiraCode Nerd Font Mono' ,  Consolas, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
   "editor.fontLigatures": true,
-  "editor.cursorSurroundingLines": 15,
-  "workbench.iconTheme": "catppuccin-frappe",
+  "editor.cursorSurroundingLines": 12,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "workbench.editor.showTabs": "single"
+  "npm.keybindingsChangedWarningShown": true
 }
